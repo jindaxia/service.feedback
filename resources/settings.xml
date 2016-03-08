@@ -1,0 +1,6 @@
+<settings>
+	<category label="General">
+		<setting visible="true" id="server-ip" type="ipaddress" label="Server IP" default="114.215.199.163"/>
+		<setting visible="true" id="device-id" type="text" default="" label="Device ID" />
+	</category>
+</settings>

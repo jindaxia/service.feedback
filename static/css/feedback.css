@@ -1,0 +1,108 @@
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-user-select: text }
+body, button, h1, h2, h3, html, input, li, ol, p, td, textarea, th, ul { margin: 0; padding: 0 }
+button, input, select, textarea { font-size: 100%; font-family: inherit; outline: 0 }
+ol, ul { list-style: none }
+html { -webkit-tap-highlight-color: rgba(0, 0, 0, 0) }
+a { color: #007aff; text-decoration: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0) }
+a:active, a:focus, a:visited { outline: 0 none }
+html { height: 100% }
+body { position: relative; min-height: 100%; background: #efeff4; font: 14px/1 SimHei, STHeiti, Arial }
+.error { color: #f60 }
+.feedback-main { padding: 0 0 30px }
+.content-padded { margin: 20px }
+.input-line { margin: 0 0 0 20px; height: 1px; background: #e5e5e5 }
+.input-group { position: relative; padding: 0; background-color: #fff; border: 1px solid #e5e5e5; border-width: 1px 0 }
+.input-row { position: relative; overflow: hidden; clear: left }
+.form-group .title { padding: 0 20px; line-height: 54px; font-weight: 400; color: #999 }
+.form-group .title:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0 }
+.form-group .em { color: #f60 }
+.form-group .lbl { float: left; font-size: 16px }
+.form-group .tips { float: right; color: #999; font-size: 13px }
+.form-group .con { padding-right: 14px }
+.input-row-lr label { float: left; width: 35%; padding: 12px 20px; font-family: "Helvetica Neue", Helvetica, sans-serif; line-height: 1; font-size: 15px }
+.input-row-lr input, .input-row-lr select, .input-row-lr textarea { float: right; width: 65%; padding-left: 0; margin-bottom: 0; border: 0 }
+input, select, textarea { width: 100%; height: 39px; -webkit-appearance: none; padding: 10px 15px; margin-bottom: 15px; font-size: 15px; line-height: 15px; -webkit-user-select: text; background-color: #fff; border: 1px solid rgba(0, 0, 0, .2); border-radius: 3px; outline: 0 }
+.input-group textarea { height: 130px }
+.input-group input, .input-group textarea { margin-bottom: 0; background-color: transparent; border: 0; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; line-height: 1.5 }
+.form-group .button { display: block; width: 100%; -webkit-border-radius: 4px; border-radius: 4px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 12px 0; background-color: #fe7000; color: #fff; font-size: 15px; line-height: 1; text-align: center }
+.photo_list { width: 100%; margin-right: -20px; padding: 20px; overflow: hidden }
+.photo_list .item { float: left; margin-right: 10px; position: relative; width: 80px; height: 80px; background-color: #ddd; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box }
+.photo_list .item-add { background-color: #fff; border: 1px solid #e5e5e5 }
+.item-add .btn-addpic { display: block; width: 100%; height: 100% }
+.item-add .btn-addpic-center { position: absolute; width: 50px; height: 50px; top: 50%; left: 50%; margin-top: -25px; margin-left: -25px }
+.item-add .btn-addpic .row { position: absolute; top: 24px; width: 100%; height: 2px; background: #d8d8d8 }
+.item-add .btn-addpic .col { position: absolute; left: 24px; width: 2px; height: 100%; background: #d8d8d8 }
+.photo_list .pic { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; vertical-align: middle; background-position: center center; background-repeat: no-repeat; background-size: cover; z-index: 1 }
+.feedback-footer { margin-top: 20px; height: 40px; font-size: 12px; line-height: 40px }
+.feedback-footer .con { position: absolute; bottom: 0; width: 100%; border-top: 1px solid #eee; background: #f5f5f5; color: #aaa; text-align: center }
+.tipsbox { position: fixed; left: 50%; top: 40%; border-radius: 10px; background: rgba(0, 0, 0, .7); min-width: 78px; height: 82px; margin-left: -49px; margin-top: -41px; padding: 0 10px }
+.tipsbox-error, .tipsbox-success { margin: 18px auto 16px }
+.tipsbox-error { background: url(../image/error.png); background-size: 100% 100%; width: 14px; height: 14px }
+.tipsbox-success { background: url(../image/success.png); background-size: 100% 100%; width: 23px; height: 15px }
+.tipsbox .text { color: #fff; font-size: 14px; text-align: center }
+.layer_loading { position: relative; width: 120px; height: 120px }
+.layer_loading .spinner { width: 50px; height: 50px; margin: 20px 0 8px }
+.layer_loading .spinner div { background: #fff }
+.spinner { display: inline-block; position: relative; width: 22px; height: 22px }
+.spinner div { width: 10%; height: 25%; background: #666; position: absolute; left: 44.5%; top: 37%; opacity: 0; -webkit-animation: spinenerFade 1s linear infinite; -webkit-border-radius: 5px; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .2) }
+.spinner .b1 { -webkit-transform: rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s }
+.spinner .b2 { -webkit-transform: rotate(30deg) translate(0, -142%); -webkit-animation-delay: -.9167s }
+.spinner .b3 { -webkit-transform: rotate(60deg) translate(0, -142%); -webkit-animation-delay: -.833s }
+.spinner .b4 { -webkit-transform: rotate(90deg) translate(0, -142%); -webkit-animation-delay: -.75s }
+.spinner .b5 { -webkit-transform: rotate(120deg) translate(0, -142%); -webkit-animation-delay: -.667s }
+.spinner .b6 { -webkit-transform: rotate(150deg) translate(0, -142%); -webkit-animation-delay: -.5833s }
+.spinner .b7 { -webkit-transform: rotate(180deg) translate(0, -142%); -webkit-animation-delay: -.5s }
+.spinner .b8 { -webkit-transform: rotate(210deg) translate(0, -142%); -webkit-animation-delay: -.41667s }
+.spinner .b9 { -webkit-transform: rotate(240deg) translate(0, -142%); -webkit-animation-delay: -.333s }
+.spinner .b10 { -webkit-transform: rotate(270deg) translate(0, -142%); -webkit-animation-delay: -.25s }
+.spinner .b11 { -webkit-transform: rotate(300deg) translate(0, -142%); -webkit-animation-delay: -.1667s }
+.spinner .b12 { -webkit-transform: rotate(330deg) translate(0, -142%); -webkit-animation-delay: -.0833s }
+@-webkit-keyframes spinenerFade {
+	from { opacity: .8 }
+	to { opacity: .3 }
+}
+.dialog-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; z-index: 900; opacity: .45 }
+.dialog { position: fixed; z-index: 999; top: 50%; left: 50%; width: 270px; margin-top: -130px; margin-left: -135px; border-radius: 5px; background: #f8f8f8 }
+.tips { background: 0 0 }
+.fd-success { margin: -20px 0 -10px }
+.layer_bg { width: 100%; height: 100%; background: rgba(0, 0, 0, .7); border-radius: 4px }
+.layer_con { width: 100%; height: 100%; position: absolute; left: 0; top: 0; text-align: center }
+.dialog .bd .layer_txt { color: #fff; font-size: 16px; line-height: 20px; padding: 0 5px }
+.dialog .title { font-size: 16px; line-height: 50px; border-bottom: 1px solid #e5e5e5; text-align: center; color: #2e2f31; font-weight: 400; margin: 0 0 10px }
+.dialog .bd { overflow: auto; font-size: 14px; text-align: center; padding: 20px 0 }
+.dialog .bd p { padding: 3px 0; color: #666 }
+.dialog .bd .gray { color: #999 }
+.dialog .ft { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; border-top: 1px solid #e5e5e5 }
+.dialog-btn { display: block; -webkit-box-flex: 1; -ms-flex: 1; -webkit-flex: 1; flex: 1; height: 45px; border-left: 1px solid #e5e5e5; color: #3e63bc; font-size: 14px; line-height: 45px; text-align: center; text-decoration: none }
+.dialog-btn:first-child { border-left: 0 none }
+.pic-panel { text-align: center }
+.pic-panel .btn-pic-del { display: inline-block; width: 45px; height: 45px; margin-top: 10px; background-image: url(../image/del.png); background-size: 100% 100% }
+.detail-con { padding: 10px 20px !important }
+.mui-content { background-color: #efeff4 }
+.page-main .height-mui-table { margin-bottom: 15px }
+.mui-table-view { position: relative; padding-left: 0; margin-top: 0; margin-bottom: 0; list-style: none; background-color: #fff }
+.mui-table-view:before { position: absolute; top: 0; right: 0; left: 0; height: 1px; content: ''; background-color: #e5e5e5; -webkit-transform: scaleY(.5); transform: scaleY(.5) }
+.mui-table-view-cell:last-child:after, .mui-table-view-cell:last-child:before { height: 0 }
+.mui-table-view-cell:after { position: absolute; right: 0; bottom: 0; left: 15px; height: 1px; content: ''; background-color: #e5e5e5; -webkit-transform: scaleY(.5); transform: scaleY(.5) }
+.mui-table-view-cell { position: relative; overflow: hidden; background-color: inherit; -webkit-touch-callout: none }
+.mui-table-view-cell p { line-height: 1.5 }
+.mui-table-view-cell>a { position: relative; display: block; padding: 12px 15px; overflow: hidden; color: inherit; text-overflow: ellipsis; white-space: nowrap }
+.cellli { border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; color: #303134; line-height: 1.1em }
+.return-icon { background-image: url(../image/return.gif); background-size: 100% 100%; width: 7px; height: 12px; display: inline-block; position: absolute; top: 12px; right: 20px }
+.titleone { margin: 0 0 0 20px; color: #999; font-size: 15px; line-height: 54px; font-weight: 400 }
+.titletwo { margin: 10px 0 10px 15px; color: #999; font-size: 15px }
+.color-li { color: #fe7000 }
+.size-li { font-size: 15px }
+.nbaPE_color, .nbaPE_colortwo { display: inline-block; color: #fff; background-color: #fe7000; padding: 2px 4px; margin-top: 20px }
+.nbaPE_font { color: #777; margin: 9px 0 }
+.c_red { color: red; font-size: 15px }
+.titledatabag { line-height: 1.5em }
+.fontcolorbold { color: #777; margin: 9px 0 }
+.font-h5title { color: #303134; font-size: 15px; margin: 9px 0 9px 15px }
+.icon { background-image: url(../image/feedb.gif); background-size: 100% 100%; width: 14px; height: 14px; display: inline-block; position: absolute; top: 13px }
+.span-back { display: inline-block; margin-left: 23px }
+table { border-collapse: collapse; border-spacing: 0 }
+.tablesize tr>th { border: 1px solid #2c2c2c; color: #333; font-size: 14px }
+.tablesize tr>td { border: 1px solid #2c2c2c; color: #333; padding-left: 5px; font-size: 14px; word-wrap: break-word; word-break: break-all }
+.tablesize { width: 100%; margin: 0 }
+.margin-tb-15 { margin: 15px 0 }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://tv.t002.ottcn.com/tools/support/view -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>意见反馈</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="./css/feedback.css">
+<style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></head>
+<body>
+	<section class="feedback-main">
+		<form action="../feedback" method="post">
+			<div class="form-group">
+				<h3 class="title">
+					<label class="lbl">问题或建议<span class="em">*</span></label>
+					<span id="limit-tips" class="tips">还可以输入200字</span>
+				</h3>
+				<div class="input-group">
+					<div class="input-row">
+						<textarea id="text" name="text" class="textarea" placeholder="请描述问题现象、出现问题的QQ、影片、操作、城市、网络供应商和带宽等详细信息"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<h3 class="title">
+					<label class="lbl">联系方式</label>
+				</h3>
+				<div class="input-group">
+					<div class="input-row input-row-lr">
+						<label>QQ号<span class="em">*</span></label>
+						<input id="contact" name="contact" maxlength="20" class="text" placeholder="请输入QQ号码">
+					</div>
+					<div class="input-line"></div>
+					<div class="input-row input-row-lr">
+						<label>手机号</label>
+						<input id="telphone" name="telphone" maxlength="20" class="text" placeholder="紧急情况请填写方便联系您">
+					</div>
+				</div>
+			</div>
+			<div class="form-group content-padded">
+				<a id="btnSubmit" class="button" type="button">提 交</a>
+			</div>
+			
+			<input id="guid" name="guid" type="hidden" value="">
+			<input id="sys_version" name="sys_version" type="hidden" value="">
+			<input id="pt" name="pt" type="hidden" value="KT">
+			<input id="pr" name="pr" type="hidden" value="VIDEO">
+			<input id="version" name="version" type="hidden" value="">
+			<input id="channel" name="channel" type="hidden" value="">
+			<input id="android_hash" name="android_hash" type="hidden" value="">
+			<input id="openid" name="openid" type="hidden" value="">
+			<input id="accesstoken" name="accesstoken" type="hidden" value="">
+			<input id="appid" name="appid" type="hidden" value="">
+			<input id="qua" name="qua" type="hidden" value="">
+			<input id="from" name="from" type="hidden" value="">
+		</form>
+	</section>
+	
+	<footer class="feedback-footer">
+	</footer>
+
+	<div id="fd-alert" style="display: none;">
+		<div class="dialog-modal"></div>
+		<div class="dialog">
+			<div id="alert-text" class="bd">
+			</div>
+			<div class="ft"><a id="alert-ok" class="dialog-btn" href="javascript:;">确定</a></div>
+		</div>
+	</div>
+	
+	<div id="pic-preview" style="display: none;">
+		<div class="pic-panel">
+			<div class="pic">
+			</div>
+			<a href="javascript:;" class="btn-pic-del btnPicDel"></a>
+		</div>
+	</div>
+	
+	<script id="tmpl-pic-lt" type="text/x-tx-tmpl">
+		<% for(var i in pics) { %>
+		<li class="item" data-pic="<%= pics[i] %>">
+			<a class="pic" style="background-image: url(<%= pics[i] %>);"></a>
+		</li>
+		<% } %>
+	</script>
+	
+	<script src="./js/zepto-1.1.2.min.js"></script>
+	<script src="./js/jweixin-1.0.0.js"></script>
+	
+	<script src="./js/feedback.js"></script>
+	<script>
+		initFB({
+			"appId": "",
+            "nonceStr": "",
+            "timestamp": 0,
+            "signature": ""
+		});
+	</script>
+
+</body></html>
